@@ -1,41 +1,60 @@
-<!doctype html> 
-<html lang="en">
-     <head> 
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <title>
-            Template - Table Layout
-        </title> 
-        <link rel="stylesheet" href="template-table.css"> 
-    </head> 
-    <body> 
-        <table class="layout" role="presentation" aria-label="Page layout"> 
-            <tr class="row-header">
-                 <td> 
-                    <header class="header">
-                        <span>HEADER</span>
-                    </header> 
-                </td> 
-            </tr> 
-            <tr class="row-nav">
-                 <td> 
-                    <nav class="nav" aria-label="Primary"><span>NAVIGASI</span></nav> 
-                </td> 
-            </tr> 
-            <tr class="row-main"> 
-                <td> 
-                    <main class="main">
-                         <table class="inner" role="presentation">
-                             <tr> 
-                                <td class="content-cell">
-                                     <section aria-labelledby="heading1">
-                                         <h1 id="heading1">
-                                            Heading 1
-                                         </h1> 
-                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                         </section>
-                                         </td>
-                                          <td class="sidebar-cell">
-                                             <aside aria-label="Sidebar menu"> 
-                                                <h3 class="menu-title">Menu:</h3>
-                                                 <ul> <li>Home</li> <li>Berita</li> <li>Layanan</li> <li>Kontak</li> </ul> </aside> </td> </tr> </table> </main> </td> </tr> <tr class="row-footer"> <td> <footer class="footer"><span>FOOTER</span></footer> </td> </tr> </table> </body> </html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Tabel dengan Semantic Tag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="layout" cellspacing="0" cellpadding="10" align="center">
+        <!-- Header -->
+        <tr>
+            <td colspan="2">
+                <header>
+                    <h2>HEADER</h2>
+                </header>
+            </td>
+        </tr>
+
+        <!-- Navigasi -->
+        <tr>
+            <td colspan="2">
+                <nav>
+                    <h3>NAVIGASI</h3>
+                </nav>
+            </td>
+        </tr>
+
+        <!-- Konten dan Menu Samping -->
+        <tr>
+            <td class="konten">
+                <article>
+                    <h1>Heading 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </td>
+            <td class="sidebar">
+                <aside>
+                    <strong>Menu:</strong>
+                    <ul>
+                        <li>Home</li>
+                        <li>Berita</li>
+                        <li>Layanan</li>
+                        <li>Kontak</li>
+                    </ul>
+                </aside>
+            </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+            <td colspan="2">
+                <footer>
+                    <p>FOOTER</p>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

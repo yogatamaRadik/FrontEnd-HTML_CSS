@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+table.layout {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Header */
+header {
+    background-color: #ffe0b3;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navigasi */
+nav {
+    background-color: #d9e6f2;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Konten Utama */
+.konten {
+    background-color: #f7d6d6;
+    width: 70%;
+    vertical-align: top;
+}
+
+/* Sidebar Menu */
+.sidebar {
+    background-color: #d9ead3;
+    width: 30%;
+    vertical-align: top;
+}
+
+/* Footer */
+footer {
+    background-color: #ffe0b3;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Menu List */
+aside ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+aside li {
+    margin-bottom: 5px;
+}
