@@ -1,56 +1,152 @@
+/* ================================
+   BASE STYLES
+================================ */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    margin: 0;
+    background: #ffffff;
+    color: var(--text);
+    font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-table.layout {
-    width: 70%;
-    border-collapse: collapse;
-    margin-top: 20px;
+/* ================================
+   TABLE LAYOUT (Outer Wrapper)
+================================ */
+.table-wrap {
+    padding: 24px 0;
 }
 
-/* Header */
-header {
-    background-color: #ffe0b3;
-    text-align: center;
-    padding: 10px;
+.layout {
+    width: 1100px;
+    margin: 24px auto;
+    border: 2px solid var(--border);
+    border-spacing: 0;
+    background: #fff;
 }
 
-/* Navigasi */
-nav {
-    background-color: #d9e6f2;
-    text-align: center;
-    padding: 8px;
+.layout td {
+    padding: 0;
 }
 
-/* Konten Utama */
-.konten {
-    background-color: #f7d6d6;
-    width: 70%;
+/* ================================
+   HEADER
+================================ */
+.row-header td {
+    border-bottom: 2px solid var(--border);
+}
+
+.header {
+    background: var(--header-footer-bg);
+    padding: 26px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #6a5731;
+    letter-spacing: 0.5px;
+}
+
+/* ================================
+   NAVIGATION
+================================ */
+.row-nav td {
+    border-bottom: 2px solid var(--border);
+}
+
+.nav {
+    background: var(--nav-bg);
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3a4b5d;
+    font-weight: 600;
+}
+
+/* ================================
+   MAIN CONTENT (Two Columns)
+================================ */
+.main {
+    display: block;
+}
+
+.inner {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.content-cell {
+    width: 72%;
+    background: var(--content-bg);
+    border-right: 2px solid var(--border);
     vertical-align: top;
 }
 
-/* Sidebar Menu */
-.sidebar {
-    background-color: #d9ead3;
-    width: 30%;
+.sidebar-cell {
+    width: 28%;
+    background: var(--sidebar-bg);
     vertical-align: top;
 }
 
-/* Footer */
-footer {
-    background-color: #ffe0b3;
+/* ================================
+   CONTENT SPACING
+================================ */
+.content-cell section {
+    padding: 40px 44px 36px 48px;
+    min-height: 420px;
+}
+
+.sidebar-cell aside {
+    padding: 28px 24px;
+    min-height: 420px;
+}
+
+/* ================================
+   TYPOGRAPHY
+================================ */
+#heading1 {
+    margin: 6px 0 16px 0;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--title);
+    font-weight: 800;
+}
+
+.main p {
+    max-width: 640px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.menu-title {
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    color: #3f4a3f;
+}
+
+.sidebar-cell ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+/* ================================
+   FOOTER
+================================ */
+.row-footer td {
+    border-top: 2px solid var(--border);
+}
+
+.footer {
+    background: var(--header-footer-bg);
+    padding: 26px 28px;
     text-align: center;
-    padding: 10px;
+    font-weight: 700;
+    color: #6a5731;
+    letter-spacing: 0.5px;
 }
 
-/* Menu List */
-aside ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 5px;
-}
-
-aside li {
-    margin-bottom: 5px;
-}
+/* ================================
+   NOTE
+   Fixed layout like your image
+   (No responsive changes)
+================================ */
