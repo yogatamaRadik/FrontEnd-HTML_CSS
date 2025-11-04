@@ -1,4 +1,21 @@
 /* ================================
+   COLOR VARIABLES
+================================ */
+:root {
+    --border-outer: #E0C188;       /* Bingkai luar */
+    --border-header-nav: #CDAA7D;  /* Garis antara header & nav */
+    --border-nav-main: #AFAFAF;    /* Garis antara nav & konten */
+    --border-main-footer: #CDAA7D; /* Garis antara konten & footer */
+
+    --text: #2C2C2C;
+    --title: #3F2C14;
+    --header-footer-bg: #FFE5B4;   /* Krem */
+    --nav-bg: #DCE6F1;             /* Biru muda */
+    --content-bg: #F8D7DA;         /* Merah muda */
+    --sidebar-bg: #D9EAD3;         /* Hijau muda */
+}
+
+/* ================================
    BASE STYLES
 ================================ */
 body {
@@ -18,7 +35,7 @@ body {
 .layout {
     width: 1100px;
     margin: 24px auto;
-    border: 2px solid var(--border);
+    border: 2px solid var(--border-outer);
     border-spacing: 0;
     background: #fff;
 }
@@ -31,7 +48,7 @@ body {
    HEADER
 ================================ */
 .row-header td {
-    border-bottom: 2px solid var(--border);
+    border-bottom: 2px solid var(--border-header-nav);
 }
 
 .header {
@@ -49,7 +66,7 @@ body {
    NAVIGATION
 ================================ */
 .row-nav td {
-    border-bottom: 2px solid var(--border);
+    border-bottom: 2px solid var(--border-nav-main);
 }
 
 .nav {
@@ -77,7 +94,7 @@ body {
 .content-cell {
     width: 72%;
     background: var(--content-bg);
-    border-right: 2px solid var(--border);
+    border-right: 2px solid var(--border-outer);
     vertical-align: top;
 }
 
@@ -133,7 +150,7 @@ body {
    FOOTER
 ================================ */
 .row-footer td {
-    border-top: 2px solid var(--border);
+    border-top: 2px solid var(--border-main-footer);
 }
 
 .footer {
@@ -146,7 +163,6 @@ body {
 }
 
 /* ================================
-   NOTE
-   Fixed layout like your image
+   FIXED LAYOUT
    (No responsive changes)
 ================================ */
