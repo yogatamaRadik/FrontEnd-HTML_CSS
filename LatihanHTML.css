@@ -1,23 +1,19 @@
-/* ================================
-   COLOR VARIABLES
-================================ */
+/* WARNA */
 :root {
-    --border-outer: #E0C188;       /* Bingkai luar */
-    --border-header-nav: #CDAA7D;  /* Garis antara header & nav */
-    --border-nav-main: #AFAFAF;    /* Garis antara nav & konten */
-    --border-main-footer: #CDAA7D; /* Garis antara konten & footer */
+    --border-outer: #E0C188;       
+    --border-header-nav: #766fdd;  
+    --border-nav-main: #766fdd;    
+    --border-main-footer: #CDAA7D;
 
     --text: #2C2C2C;
     --title: #3F2C14;
-    --header-footer-bg: #FFE5B4;   /* Krem */
-    --nav-bg: #DCE6F1;             /* Biru muda */
-    --content-bg: #F8D7DA;         /* Merah muda */
-    --sidebar-bg: #D9EAD3;         /* Hijau muda */
+    --header-footer-bg: #FFE5B4;   
+    --nav-bg: #DCE6F1;          
+    --content-bg: #F8D7DA;         
+    --sidebar-bg: #D9EAD3;         
 }
 
-/* ================================
-   BASE STYLES
-================================ */
+/* STYLE BASE */
 body {
     margin: 0;
     background: #ffffff;
@@ -25,16 +21,14 @@ body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-/* ================================
-   TABLE LAYOUT (Outer Wrapper)
-================================ */
+/* LAYOUT TABEL */
 .table-wrap {
     padding: 24px 0;
 }
 
 .layout {
     width: 1100px;
-    margin: 24px auto;
+    margin: 25px auto;
     border: 2px solid var(--border-outer);
     border-spacing: 0;
     background: #fff;
@@ -44,34 +38,30 @@ body {
     padding: 0;
 }
 
-/* ================================
-   HEADER
-================================ */
+/* HEADER */
 .row-header td {
     border-bottom: 2px solid var(--border-header-nav);
 }
 
 .header {
     background: var(--header-footer-bg);
-    padding: 26px 28px;
+    padding: 33px 28px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    color: #6a5731;
+    color: #3a4b5d;
     letter-spacing: 0.5px;
 }
 
-/* ================================
-   NAVIGATION
-================================ */
+/* NAVIGASI */
 .row-nav td {
     border-bottom: 2px solid var(--border-nav-main);
 }
 
 .nav {
     background: var(--nav-bg);
-    padding: 14px 28px;
+    padding: 20px 28px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,9 +69,7 @@ body {
     font-weight: 600;
 }
 
-/* ================================
-   MAIN CONTENT (Two Columns)
-================================ */
+/* KONTEN 2 KOLOM */
 .main {
     display: block;
 }
@@ -104,28 +92,24 @@ body {
     vertical-align: top;
 }
 
-/* ================================
-   CONTENT SPACING
-================================ */
+/* SPACE KONTEN */
 .content-cell section {
     padding: 40px 44px 36px 48px;
-    min-height: 420px;
+    min-height: 280px;
 }
 
 .sidebar-cell aside {
     padding: 28px 24px;
-    min-height: 420px;
+    min-height: 280px;
 }
 
-/* ================================
-   TYPOGRAPHY
-================================ */
+/* TYPOGRAPHY */
 #heading1 {
     margin: 6px 0 16px 0;
     font-size: 42px;
     line-height: 1.2;
     color: var(--title);
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .main p {
@@ -136,19 +120,17 @@ body {
 }
 
 .menu-title {
-    margin: 0 0 10px 0;
+    margin: 20 15 10px 5;
     font-weight: 700;
     color: #3f4a3f;
 }
 
 .sidebar-cell ul {
-    margin: 0;
-    padding-left: 22px;
+    margin: 10;
+    padding-left: 32px;
 }
 
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 .row-footer td {
     border-top: 2px solid var(--border-main-footer);
 }
@@ -161,8 +143,3 @@ body {
     color: #6a5731;
     letter-spacing: 0.5px;
 }
-
-/* ================================
-   FIXED LAYOUT
-   (No responsive changes)
-================================ */
